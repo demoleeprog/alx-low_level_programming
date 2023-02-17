@@ -17,21 +17,16 @@
  */
 int main(void)
 {
-	int i = 0;
+	int a;
 
-	while (i < 100)
+	for (a = 0; a < 10; a++)
 	{
-		if (i / 10 < i % 10)
+		putchar(a + '0');
+		if (a < 9)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			if (i < 89)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
